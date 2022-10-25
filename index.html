@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jokenpo</title>
+
+</head>
+<body>
+<main>
+        <h1>Pedra - Papel - Tesoura</h1>
+    </br>
+        <h1>Placar:</h1>
+    </br>
+        <h1>Player:</h1>
+        <h1 class="placarPlayer">0</h1>
+        <h1>Robo:</h1>
+        <h1 class="placarRobo">0</h1>
+        <h1>Empates:</h1>
+        <h1 class="empates">0</h1>
+
+        <section>
+            <button class="stone" onclick="savePersonChoice('Pedra')">
+            <img src="./Img/pedra.png" class="img"></button>
+            <button class="paper" onclick="savePersonChoice('Papel')"><img src="./Img/papel.png" class="img"></button>
+            <button class="scissors" onclick="savePersonChoice('Tesoura')"><img src="./Img/tesoura.png" class="img"></button>
+        </section>
+
+     <div class="div">
+            <button class="reset" onclick="resetScore()">Resetar Score</button>
+    </div>
+
+</main>
+    <script src="./Main.js"></script>
+</body>
+</html>
